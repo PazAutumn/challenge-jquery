@@ -7,9 +7,15 @@ $(document).ready( function(){
 	*/
 	$('.js-back').hide();
 	/*
-*Llamando a la función printNews
-*/
+	*Llamando a la función printNews
+	*/
 	printNews();
+	/*
+	*Llamando a la función renderActivities
+	*/
+
+	renderActivities(activities);
+	console.log(renderActivities);
 
 });
 
@@ -52,6 +58,9 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
+	for(var i = 0; i < activitiesArray.length; i++){
+		renderActivity(activitiesArray[i]);
+	}
 }
 
 /*
@@ -60,7 +69,13 @@ function renderActivities(activitiesArray) {
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(recipe) {
-	
+	/* El if no es necesario para validar ya que si recipe estuviese vacío 
+	*la función render Activity no se ejecutaría
+	*if (recipe.length > 0){
+	*	$('.wrapper-message').hide();
+	*}
+	*/
+	$('.wrapper-message').hide();
 }
 
 /*
