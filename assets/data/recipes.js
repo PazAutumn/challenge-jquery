@@ -7,7 +7,7 @@ var recipesArray = [
     "excerpt": "When I’ve got too many cheese bits on hand, it's now fromage fort to the rescue",
     "source": {
       "name": "David Lebovitz",
-      "url": "http://www.davidlebovitz.com/2014/04/fromage-forte-cheese-dip-spread-recipe/"
+      "url": "http://www.davidlebovitz.com/2014/04/fromage-forte-cheese-dip-spread-recipe/",
     },
     "cookTime": "15 min",
     "ingredients": [
@@ -198,7 +198,7 @@ var recipesArray = [
     "excerpt": "",
     "source": {
       "name": "Ottolenghi",
-      "url": "http://www.ottolenghi.co.uk/lahmacun-turkish-pizza-with-spicy-minced-beef-and-salad-topping-shop"
+      "url": "http://www.ottolenghi.co.uk/lahmacun-turkish-pizza-with-spicy-minced-beef-and-salad-topping-shop",
     },
     "cookTime": "40 min",
     "ingredients": [
