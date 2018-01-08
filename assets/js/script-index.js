@@ -6,6 +6,10 @@ $(document).ready( function(){
 	*Escondiendo icono de la flecha
 	*/
 	$('.js-back').hide();
+	/*
+*Llamando a la función printNews
+*/
+	printNews();
 
 });
 
@@ -44,6 +48,13 @@ function renderActivities(activitiesArray) {
 */
 function renderActivity(recipe) {
 	
+}
+
+/*
+*Asignando el texto nuevas recetas al párrafo
+*/
+function printNews () {
+	$('.callout-news').find('p').text('NUEVAS RECETAS');
 }
 
 
