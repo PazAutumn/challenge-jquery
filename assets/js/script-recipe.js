@@ -27,3 +27,9 @@ $(document).ready( function(){
 		$('.js-show-recipe').removeClass('active');
 	})
 });
+
+/* *#06#
+
+IMEI
+351907072171847
+*/
