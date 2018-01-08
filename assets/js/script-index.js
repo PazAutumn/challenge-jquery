@@ -18,7 +18,12 @@ $(document).ready( function(){
 	console.log(renderActivities);
 
 });
-
+/*
+*Asignando el texto nuevas recetas al párrafo
+*/
+function printNews () {
+	$('.callout-news').find('p').text('NUEVAS RECETAS');
+}
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
@@ -76,13 +81,14 @@ function renderActivity(recipe) {
 	*}
 	*/
 	$('.wrapper-message').hide();
-}
-
-/*
-*Asignando el texto nuevas recetas al párrafo
-*/
-function printNews () {
-	$('.callout-news').find('p').text('NUEVAS RECETAS');
+	$('.list-activities').append(
+		'<a href="#" class="item-activity"><span class="attribution"><span class="avatar">' +
+		'<img src="'+ recipe.userAvatar +'" class="image-avatar">' +
+		'</span><span class="meta"><span class="author">' + recipe.userName +
+		'</span> made <span class="recipe">'+ recipe.recipeName +'</span>' +
+		':'+ recipe.text +'<span class="location"> &mdash;'+ 
+		recipe.place +'</span></span></span><div class="bg-image"'+
+		'style="background-image: url('+ recipe.image +');"></div></a>');
 }
 
 
