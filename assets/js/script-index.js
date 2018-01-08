@@ -20,6 +20,14 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	/*
+	*Recorrer variable recipesArray
+	*/
+	for (var i = 0; i < recipesArray.length; i++){
+		if(recipesArray[i].highlighted === true){
+			renderRecipe(recipesArray[i]);
+		}
+	}
 }
 
 /*
@@ -30,6 +38,7 @@ function renderHighlightedRecipes(recipesArray) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+
 }
 
 
